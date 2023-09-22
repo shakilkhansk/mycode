@@ -33,6 +33,40 @@
         });
         }
 //-------------pagination------------
+<table id="student-table" class="table table-striped table-responsive data-table2 text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input checkAll">
+                                                <label class="form-check-label">S.ID</label>
+                                            </div>
+                                        </th>
+                                        <th>Photo</th>
+                                        <th>Name</th>
+                                        <th>Class</th>
+                                        <th>Roll</th>
+                                        <th>Section</th>
+                                        <th>Gender</th>
+                                        <th>Phone</th>
+                                        <th>Parents</th>
+                                        <th>Address</th>
+                                        <th>Date Of Birth</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+    <tbody>
+        <!-- Student data will be appended here -->
+    </tbody>
+</table>
+<div id="totalRecord" class="text-center float-lg-left" style="margin-top: 15px">
+</div>
+<nav aria-label="Page navigation example" id="paging" class="float-right" style="margin-top: 15px">
+  <ul class="pagination">
+  </ul>
+</nav>
+-------------------------------
         function loadPaginatedData(page=1,id=null,name=null,class_id=null,section_id=null) {
         if($("#student_id").val()){
         var id=$("#student_id").val();
